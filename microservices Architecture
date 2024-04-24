@@ -1,11 +1,11 @@
 Introduction:Microservices architecture breaks down a system into smaller, independently deployable services, each focused on a specific business function.This design promotes flexibility, scalability, and ease of maintenance.
 Components:
 User Management Service: Handles user authentication, registration, and profile management.Provides APIs for user-related functionalities like login, logout, and profile updates.
-Product Catalog Service: Manages the catalog of grocery products.Handles product information, categories, pricing, and availability.Provides APIs for browsing products, searching, and filtering.
+Product Service: Manages the catalog of grocery products.Handles product information, categories, pricing, and availability.Provides APIs for browsing products, searching, and filtering.
 Order Management Service: Manages the lifecycle of orders from creation to fulfillment.Handles order placement, modification,cancellation, and tracking.Integrates with payment gateways for transaction processing.
 Shopping Cart Service:Manages the user's shopping cart functionality.Allows users to add, remove, and update items in their cart.Handles cart persistence and synchronization across sessions.
 Payment Service:Handles payment processing and transactions securely.Integrates with payment gateways and supports various payment methods.Ensures transaction security and handles payment failures gracefully.
-Delivery Service:Manages the delivery logistics and scheduling.Calculates delivery fees, routes, and estimated delivery times.Integrates with third-party delivery services or handles in-house delivery.
+Delivery/Order Service:Manages the delivery logistics and scheduling.Calculates delivery fees, routes, and estimated delivery times.Integrates with third-party delivery services or handles in-house delivery.
 Notification Service:Sends notifications to users about order status updates, promotions, and reminders.Supports various notification channels such as email, SMS, and push notifications.Provides APIs for managing notification preferences and subscriptions.
 API Gateway: Acts as a single entry point for clients, routing requests to the appropriate microservice.
 Load Balancing: Distributes incoming traffic across multiple instances of services for scalability and fault tolerance.
